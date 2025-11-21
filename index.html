@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VanillaJS Cricket Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <h1>Vanilla Cricket 🏏</h1>
+        <p id="game-message">Click 'Start Game' to begin!</p>
+
+        <div id="scoreboard">
+            <h2>Scoreboard</h2>
+            <div class="score-details">
+                <p>Runs: <span id="runs">0</span></p>
+                <p>Wickets: <span id="wickets">0</span></p>
+                <p>Overs: <span id="overs">0.0</span></p>
+                <p>Target: <span id="target">N/A</span></p>
+            </div>
+        </div>
+        
+        <div id="pitch">
+            <div id="ball"></div>
+            <div id="wicket-area">
+                <div id="wicket-stumps"></div>
+                <div id="wicket-bails"></div>
+            </div>
+        </div>
+
+        <div id="controls">
+            <button id="start-btn">Start Game</button>
+
+            <div id="batting-controls" class="hidden">
+                <p>Choose your run:</p>
+                <button class="bat-btn" data-run="1">1 Run</button>
+                <button class="bat-btn" data-run="2">2 Runs</button>
+                <button class="bat-btn" data-run="3">3 Runs</button>
+                <button class="bat-btn" data-run="4">4 Runs</button>
+                <button class="bat-btn" data-run="6">6 Runs</button>
+                <button class="bat-btn" data-run="0">0 Run (Defend)</button>
+            </div>
+
+             <div id="bowling-controls" class="hidden">
+                <p>Computer is bowling...</p>
+                </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
